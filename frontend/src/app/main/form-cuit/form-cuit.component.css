@@ -1,0 +1,11 @@
+.form-cuit
+{
+	text-align:center;
+	width:300px;
+	padding:20px;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	background:#FFFFFF;	
+}

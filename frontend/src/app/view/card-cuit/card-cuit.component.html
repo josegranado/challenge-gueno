@@ -1,0 +1,49 @@
+<div *ngIf="!user; else form" class="card"  style="font-size:30px; width:500px; text-align:center" (submit)="setUser(name, surname, birthday, confidence)">
+	<div class="card-header">
+		Registra tus datos
+	</div>
+	<div class="card-body">
+		<form>
+			<div class="form-group">
+				<label for="name">Nombre</label>
+				<input name="name" type="text" class="form-control" placeholder="Ingresa tu nombre" required #name>
+			</div>
+			<div class="form-group">
+				<label for="surname">Surname</label>
+				<input name="surname" type="text" class="form-control" placeholder="Ingresa tu surname" required #surname>
+			</div>
+			<div class="form-group">
+				<label for="date">Birthday</label>
+				<input name="date" type="date" class="form-control" placeholder="Ingresa tu nombre" required #birthday>
+			</div>
+			<div class="form-group">
+				<label for="confidence">Scoring</label>
+				<input name="confidence" type="number" class="form-control" placeholder="Ingresa tu confidence" required #confidence>
+			</div>
+			<button class="btn btn-success btn-block">GUARDAR</button>
+		</form>
+	</div>
+</div>
+<ng-template #form>
+	<div class="card" style="font-size:30px; width:500px; text-align:center">
+	<div class="card-header">
+		Datos registrados
+	</div>
+	<div class="card-body">
+		<div><span><b>Nombre: </b></span> {{ user?.name }}</div>
+		<div><span><b>Surname: </b></span> {{ user?.surname }}</div>
+		<div><span><b>Birthday: </b></span> {{ user?.birthday | date: 'dd/MM/yyyy'}}</div>
+		<br>
+		<div><h2>Scoring</h2></div>
+		<br>
+		<div><span><b>Confidence: </b></span> {{ user?.scoring.confidence }}</div>
+		<div>
+			<span><b>Approved: </b></span> 
+			<div *ngIf="approved"><span>APROBADO</span></div>
+			<div *ngIf="!approved"><span>RECHAZADO</span></div>
+		</div>
+		<br>
+		<div><span><b>CUIT: </b></span> {{ id }}</div>
+	</div>
+</div>
+</ng-template>

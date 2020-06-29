@@ -1,0 +1,10 @@
+.background-view
+{
+	width:100vw;
+	height:100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.6);
+	background-blend-mode: color-burn; 
+}

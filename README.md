@@ -2,8 +2,9 @@
 Esto es un proyecto desarrollado con el Stack MEAn
 
 # API ENDPOINTS
-  GET http://localhost:4000/challenge/getCuit/:id
-  GET http://localost:4000/challenge/getUserData/:cuit
+  1. GET http://localhost:4000/challenge/getCuit/:id
+  
+  2. GET http://localost:4000/challenge/getUserData/:cuit
 
 # COMO PONERLO EN MARCHA
   1. Ejecutar el comando 'Mongod' para abrir la conexion de la base de datos.

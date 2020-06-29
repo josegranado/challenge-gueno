@@ -1,5 +1,5 @@
 # challenge-gueno
-Esto es un proyecto desarrollado con el Stack MEAn
+Esto es un proyecto desarrollado con el Stack MEAN, se centra en un reto realizado por Gueno para una prueba requerida para trabajar con Proyecto Kamila en Venezuela.
 
 # API ENDPOINTS
   1. GET http://localhost:4000/challenge/getCuit/:id
